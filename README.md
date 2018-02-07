@@ -23,15 +23,15 @@ webpage that you maintain.
 ## html-add-favicon ##
 
 Makes each HTML file in a directory use the given favicon.  A favicon is a
-favorites icon, which appears in browser tabs when you browse to a page.
+favorites icon, which appears in browser tabs.
 <a
-href="https://raw.githubusercontent.com/plume-lib/html-tools/master/add-favicon">Documentation</a>
+href="https://raw.githubusercontent.com/plume-lib/html-tools/master/html-add-favicon">Documentation</a>
 at top of file.
 
 
-## hevea helpers ##
+## Hevea helpers ##
 
-Hevea is a LaTeX-to-HTML translator.  Sometimes it needs a little help.
+[Hevea](http://hevea.inria.fr/) is a LaTeX-to-HTML translator.  Sometimes it needs a little help.
 
 * `hevea-retarget-crossrefs`
   replaces HTML cross-references of the form
@@ -42,17 +42,22 @@ Hevea is a LaTeX-to-HTML translator.  Sometimes it needs a little help.
   program) is brittle, as it may change from run to run of Hevea.
   <a href="https://raw.githubusercontent.com/plume-lib/html-tools/master/hevea-retarget-crossrefs">Documentation</a> at top of file.
 
-* `hevea-add-verbatim-linenos` replaces "??" that should be line numbers, by the line numbers, read from an aux file.
-  <a href="https://raw.githubusercontent.com/plume-lib/html-tools/master/hevea-add-verbatim-linenos">Documentation</a> at top of file.
+* `hevea-add-verbatim-linenos` replaces "??" that should be line numbers,
+  by the actual line numbers, read from an aux file.  <a
+  href="https://raw.githubusercontent.com/plume-lib/html-tools/master/hevea-add-verbatim-linenos">Documentation</a>
+  at top of file.
 
 
 ## Lists of URLs ##
 
-File `html-canonical-urls` maps a textual string (such as the name of a person,
-institution, er event) to the canonical URL for that string.
-
-File `html-valid-urls` is a list of URLs that are valid, even though an automated link-checker may indicate that they are invalid.
-
-Both files are used by the <a
+These files are used by the <a
 href="http://homes.cs.washington.edu/~mernst/software/bibtex2web.html">bibtex2web</a>
 program.
+
+ * [`html-canonical-urls`](https://raw.githubusercontent.com/plume-lib/html-tools/master/html-canonical-urls)
+   maps a textual string (such as the name of a person, institution, er
+   event) to the canonical URL for that string, such as the person's
+   homepage.
+
+ * [`html-valid-urls`](https://raw.githubusercontent.com/plume-lib/html-tools/master/html-valid-urls] is a list of URLs that are valid, even though an
+   automated link-checker may indicate that they are invalid.
