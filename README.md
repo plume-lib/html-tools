@@ -59,5 +59,5 @@ program.
    event) to the canonical URL for that string, such as the person's
    homepage.
 
- * [`html-valid-urls`](https://raw.githubusercontent.com/plume-lib/html-tools/master/html-valid-urls] is a list of URLs that are valid, even though an
+ * [`html-valid-urls`](https://raw.githubusercontent.com/plume-lib/html-tools/master/html-valid-urls) is a list of URLs that are valid, even though an
    automated link-checker may indicate that they are invalid.
