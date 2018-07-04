@@ -2,7 +2,7 @@
 # html-update-toc
 # Update (in place) table of contents for an HTML document.
 # Michael Ernst <mernst@cs.washington.edu>
-# Time-stamp: <2018-02-06 20:54:12 mernst>
+# Time-stamp: <2018-07-03 17:35:41 mernst>
 
 # This script edits a HTML file in place to modify an existing table of
 # contents.  The contents start with
@@ -61,6 +61,9 @@ my $debug = 0;
 
 my $quiet = 0;
 
+use File::Basename;
+my $script_dir = dirname(__FILE__); # directory name of this script
+
 # Read by paragraphs (remember that this is a string, not a regexp).
 # (Warning: this doesn't work for DOS files, but I hack around that via
 # the $contents_end regexp.)
@@ -107,7 +110,7 @@ FILELOOP: for my $file (@ARGV) {
     if ($debug) { print "matches end? " . ($line =~ /$contents_end/) . "\n"; }
     if ($line =~ /($contents_start)(.*?)($contents_end)/is) {
       my $oldcontent = $2;
-      my $newcontent = `html-toc $file`;
+      my $newcontent = `$script_dir/html-toc $file`;
       if ($newcontent eq "\n") {
         $newcontent = "";
       }
