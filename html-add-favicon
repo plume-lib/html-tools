@@ -36,7 +36,10 @@ patchIt () {
     fi;
   done ;
   for d in $1/* ; do
-    if [ -d $d ]; then echo "descending to "$d ; patchIt $d ../$2 ; fi ;
+    if [ -d $d ]; then
+      # echo "html-add-favicon descending to "$d
+      patchIt $d ../$2
+    fi
   done
 }
 
