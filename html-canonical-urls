@@ -86,7 +86,7 @@ Elwyn Berlekamp https://math.berkeley.edu/~berlek/
 Emina Torlak https://homes.cs.washington.edu/~emina/
 Erik Poll http://www.cs.ru.nl/~erikpoll/
 ESEC/FSE 2003 http://esecfse.cs.helsinki.fi/
-ESEC/FSE 2007 http://www.idt.mdh.se/esec-fse-2007/
+# ESEC/FSE 2007 http://www.idt.mdh.se/esec-fse-2007/
 Fausto Spoto http://profs.sci.univr.it/~spoto/
 # Feihui Li http://www.cse.psu.edu/~feli/
 # Broken, and Yashwant K. Malaiya <malaiya@cs.colostate.edu> hasn't fixed it:
@@ -169,7 +169,7 @@ Martin Kellogg https://homes.cs.washington.edu/~kelloggm/
 #Deceased: Mary Jean Harrold http://www.cc.gatech.edu/~harrold/
 Mary Shaw http://spoke.compose.cs.cmu.edu/shaweb/
 Massimo Merro http://profs.sci.univr.it/~merro/
-Mauro Pezzè http://www.inf.usi.ch/faculty/pezze/
+Mauro Pezzè https://www.inf.usi.ch/faculty/pezze/
 #Don't use "MIT" because it is a substring of other strings
 # MIT http://web.mit.edu/
 MIT Computer Science & Artificial Intelligence Laboratory https://www.csail.mit.edu/
