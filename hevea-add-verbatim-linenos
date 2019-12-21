@@ -1,5 +1,4 @@
-#! /usr/bin/env python
-
+#! /usr/bin/env python3
 """Given a file produced by Hevea that contains "??" in place of line
 references, replace those by actual line numbers, read from an aux file.
 
@@ -27,6 +26,7 @@ for line in open(auxfile):
         label_line[m.group(1)] = m.group(2)
 # print label_line
 
+
 def replace_line(match):
     """argument match is a match for lineref_re"""
     label = match.group(2)
@@ -35,4 +35,4 @@ def replace_line(match):
 
 for line in open(htmlfile):
     line = lineref_re.sub(replace_line, line)
-    print line,
+    print(line)
