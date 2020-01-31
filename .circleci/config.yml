@@ -18,8 +18,7 @@ jobs:
           paths:
             - ".git"
 
-      - run: pip install yapf
-      - run: sudo apt-get install pylint
+      - run: pip3 install yapf pylint
 
       - run: make -C tests
 
