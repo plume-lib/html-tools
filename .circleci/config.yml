@@ -3,7 +3,7 @@ jobs:
   build:
 
     docker:
-      - image: circleci/openjdk:8-jdk-browsers
+      - image: circleci/python:3.8
 
     steps:
 
@@ -17,6 +17,8 @@ jobs:
           key: source-v1-{{ .Branch }}-{{ .Revision }}
           paths:
             - ".git"
+
+      - run: pip3 install yapf pylint
 
       - run: make -C tests
 
