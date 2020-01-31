@@ -19,6 +19,8 @@ jobs:
             - ".git"
 
       - run: pip install yapf
+      - run: apt-get install pylint
+
       - run: make -C tests
 
 workflows:
