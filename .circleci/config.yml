@@ -18,6 +18,7 @@ jobs:
           paths:
             - ".git"
 
+      - run: pip install yapf
       - run: make -C tests
 
 workflows:
