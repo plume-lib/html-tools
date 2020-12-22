@@ -20,6 +20,11 @@
 #  * It does not handle file names containing spaces.
 # This version corrects these issues.
 
+if [ "$#" -ne 2 ] || ! [ -d "$1" ] || ! [ -f "$2" ]; then
+  echo "Usage: $0 DIRECTORY FILE" >&2
+  exit 1
+fi
+
 patchIt () {
   for f in "$1"/*.html ; do
     if [ -f "$f" ]; then     # if no .html files exist, f is literal "*.html"
