@@ -2,7 +2,7 @@
 # html-update-toc
 # Update (in place) table of contents for an HTML document.
 # Michael Ernst <mernst@cs.washington.edu>
-# Time-stamp: <2018-07-03 17:35:41 mernst>
+# Time-stamp: <2020-12-24 11:03:07 mernst>
 
 # This script edits a HTML file in place to modify an existing table of
 # contents.  The contents start with
@@ -24,7 +24,7 @@
 # Header lines are omitted if they contain
 #   <!-- omit from toc -->
 # For instance, this would not appear:
-#   <h1>The title of the document</h1>			<!-- omit from toc -->
+#   <h1>The title of the document</h1>                  <!-- omit from toc -->
 
 # This script does not fully parse the HTML document; instead, it
 # pattern-matches against specific lines in the document.  That means that
@@ -115,11 +115,11 @@ FILELOOP: for my $file (@ARGV) {
         $newcontent = "";
       }
       if ($oldcontent eq $newcontent) {
-	if (! $quiet) {
+        if (! $quiet) {
           print STDERR "$file has up-to-date table of contents\n";
         }
-	close(FILE);
-	next FILELOOP;
+        close(FILE);
+        next FILELOOP;
       }
       close(FILE);
 
@@ -134,8 +134,8 @@ FILELOOP: for my $file (@ARGV) {
       open(OLDFILE, "$file.bak") or die "Can't read backup I just made: $file.bak";
       open(FILE, ">$file") or die "Can't write $file; old version in $file.bak";
       while (defined($line = <OLDFILE>)) {
-	$line =~ s/($contents_start)(.*?)($contents_end)/$1$newcontent$3/si;
-	print FILE $line;
+        $line =~ s/($contents_start)(.*?)($contents_end)/$1$newcontent$3/si;
+        print FILE $line;
       }
       close(OLDFILE);
       close(FILE);

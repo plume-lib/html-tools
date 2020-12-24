@@ -2,10 +2,10 @@
 # checkargs -- check number of args in function calls
 # Michael D. Ernst <mernst@csail.mit.edu>
 # http://homes.cs.washington.edu/~mernst/software/checkargs.pm
-# Time-stamp: <2016-10-04 10:35:20 mernst>
+# Time-stamp: <2020-12-24 11:03:09 mernst>
 
 package checkargs;
-require 5.004;			# uses "for my $var"
+require 5.004;                  # uses "for my $var"
 require Exporter;
 @ISA = qw(Exporter);
 @EXPORT = qw(check_args check_args_range check_args_at_least);
@@ -91,7 +91,7 @@ sub check_args ( $@ )
       "\n"; }
   for my $index (0..$#args)
     { if (!defined($args[$index]))
-	{ die error_loc() . " undefined argument ", $index+1, ": @args[0..$index-1]\n"; } }
+        { die error_loc() . " undefined argument ", $index+1, ": @args[0..$index-1]\n"; } }
   return @args;
 }
 
@@ -108,7 +108,7 @@ sub check_args_range ( $$@ )
       ($num_actuals == 0) ? "" : ": @args", "\n"; }
   for my $index (0..$#args)
     { if (!defined($args[$index]))
-	{ die error_loc() . " undefined argument ", $index+1, ": @args[0..$index-1]\n"; } }
+        { die error_loc() . " undefined argument ", $index+1, ": @args[0..$index-1]\n"; } }
   return @args;
 }
 
@@ -131,7 +131,7 @@ sub check_args_at_least ( $@ )
       ($num_actuals == 0) ? "" : ": @args", "\n"; }
   for my $index (0..$#args)
     { if (!defined($args[$index]))
-	{ warn error_loc() . " undefined argument ", $index+1, ": @args[0..$index-1]\n"; last; } }
+        { warn error_loc() . " undefined argument ", $index+1, ": @args[0..$index-1]\n"; last; } }
   return @args;
 }
 
@@ -147,5 +147,5 @@ sub error_loc ( ) {
       return "$file_arg:$line_arg:"; }
 }
 
-1;				# successful import
+1;                              # successful import
 __END__
