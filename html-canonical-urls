@@ -4,310 +4,310 @@
 # This file maps a textual string (such as the name of a person,
 # institution, or event) to the a canonical URL for that string.
 # It is used by the bibtex2web program
-# (http://homes.cs.washington.edu/~mernst/software/bibtex2web.html).
+# (https://homes.cs.washington.edu/~mernst/software/bibtex2web.html).
 # The textual string contains bibtex2web markup, not HTML markup,
 # for special characters.
 #
 #
 # As of 6/2011, Oege de Moor is not answering repeated email about this
 # broken link.
-# 2nd Eclipse Technology Exchange Workshop (eTX) http://www.comlab.ox.ac.uk/people/oege.demoor/etxpage/eclipse.html
+# 2nd Eclipse Technology Exchange Workshop (eTX) https://www.comlab.ox.ac.uk/people/oege.demoor/etxpage/eclipse.html
 36th International Conference on Very Large Data Bases https://www.comp.nus.edu.sg/~vldb2010/
 AADEBUG 2003 https://users.elis.ugent.be/aadebug2003/
-#OLD: ACM SIGPLAN Notices http://portal.acm.org/sigplan/newsletter/
+#OLD: ACM SIGPLAN Notices https://portal.acm.org/sigplan/newsletter/
 ACM SIGPLAN Notices https://dl.acm.org/citation.cfm?id=J706
-Adam Kiezun http://people.csail.mit.edu/akiezun/
-Adam Kien017Cun http://people.csail.mit.edu/akiezun/
-Adam Kie&#0380;un http://people.csail.mit.edu/akiezun/
-# Adrian Birka http://web.mit.edu/adbirka/www/
+Adam Kiezun https://people.csail.mit.edu/akiezun/
+Adam Kien017Cun https://people.csail.mit.edu/akiezun/
+Adam Kie&#0380;un https://people.csail.mit.edu/akiezun/
+# Adrian Birka https://web.mit.edu/adbirka/www/
 ## Alan had his webpages removed as of August 2014.
-# Alan Donovan http://people.csail.mit.edu/adonovan/
+# Alan Donovan https://people.csail.mit.edu/adonovan/
 Alberto Goffi https://www.linkedin.com/in/albertogoffi/
 Alessandra Gorla https://software.imdea.org/~alessandra.gorla/
-Alessandro Orso http://www.cc.gatech.edu/~orso/
-Alex Groce http://www-2.cs.cmu.edu/~agroce/
+Alessandro Orso https://www.cc.gatech.edu/~orso/
+Alex Groce https://www-2.cs.cmu.edu/~agroce/
 Alex Potanin https://potanin.github.io/
 ALICE03 https://archive.siam.org/meetings/alice03/index.htm
 Amit Paradkar https://researcher.watson.ibm.com/researcher/view.php?person=us-paradkar
-Amy Williams http://williamslab.bscb.cornell.edu/
-Ana Milanova http://www.cs.rpi.edu/~milanova/
+Amy Williams https://williamslab.bscb.cornell.edu/
+Ana Milanova https://www.cs.rpi.edu/~milanova/
 Andreas Zeller https://www.st.cs.uni-saarland.de/zeller/
 Andrew J. Ko https://faculty.washington.edu/ajko/
 Antonio Carzaniga https://www.inf.usi.ch/carzaniga/
 Arianna Blasi https://www.inf.usi.ch/phd/blasia/
-Arvind Krishnamurthy http://www.cs.washington.edu/people/faculty/arvind/
+Arvind Krishnamurthy https://www.cs.washington.edu/people/faculty/arvind/
 ASE 2003 https://www.se.cs.uni-saarland.de/conferences/ASE/ase2003/index.htm
 ASE 2005 https://www.se.cs.uni-saarland.de/conferences/ASE/ase2005/index.html
 ASE 2006 https://www.se.cs.uni-saarland.de/conferences/ASE/ase2006/index.html
-# Broken as of 11/2013: ASE 2007 http://www.cse.msu.edu/ase2007/
+# Broken as of 11/2013: ASE 2007 https://www.cse.msu.edu/ase2007/
 Barbara Ryder https://people.cs.vt.edu/~ryder/
 Ben Tribelhorn https://www.linkedin.com/in/bentribelhorn/
-# Benjamin Morse http://web.mit.edu/scruffy/www/
-Bill Howe http://homes.cs.washington.edu/~billhowe/
-# Bjarne Steensgaard http://research.microsoft.com/~rusa/
+# Benjamin Morse https://web.mit.edu/scruffy/www/
+Bill Howe https://homes.cs.washington.edu/~billhowe/
+# Bjarne Steensgaard https://research.microsoft.com/~rusa/
 Bjorn De Sutter https://users.elis.ugent.be/~brdsutte/
-Brian Burg http://brrian.org/
-Brian Demsky http://plrg.ics.uci.edu/
-# Brock Pytlik http://www.cs.brown.edu/people/bpytlik/
+Brian Burg https://brrian.org/
+Brian Demsky https://plrg.ics.uci.edu/
+# Brock Pytlik https://www.cs.brown.edu/people/bpytlik/
 Brown University https://www.brown.edu/
 # Calvin Loncaric https://www.linkedin.com/in/calvinloncaric
-Carlos Pacheco http://people.csail.mit.edu/cpacheco/
+Carlos Pacheco https://people.csail.mit.edu/cpacheco/
 Chandrakana Nandi https://cnandi.com/
 Charles Sutton https://homepages.inf.ed.ac.uk/csutton/
 Chenglong Wang https://chenglongwang.org/
-Chris Parnin http://chrisparnin.me/
+Chris Parnin https://chrisparnin.me/
 Christoph Csallner https://ranger.uta.edu/~csallner/
 Colin S. Gordon https://www.cs.drexel.edu/~csgordon/
-Craig Chambers http://homes.cs.washington.edu/~chambers/
+Craig Chambers https://homes.cs.washington.edu/~chambers/
 Craig Kaplan https://cs.uwaterloo.ca/~csk/
 Craig S. Kaplan https://cs.uwaterloo.ca/~csk/
-Dan Grossman http://homes.cs.washington.edu/~djg/
-Daniel S. Weld http://homes.cs.washington.edu/~weld/
-# Daniel Weise http://research.microsoft.com/~dweise/
-# Daniel Weise http://homes.cs.washington.edu/~weise/
-Danny Dig http://dig.cs.illinois.edu/
-Darioush Jalali http://darioush.github.io/
+Dan Grossman https://homes.cs.washington.edu/~djg/
+Daniel S. Weld https://homes.cs.washington.edu/~weld/
+# Daniel Weise https://research.microsoft.com/~dweise/
+# Daniel Weise https://homes.cs.washington.edu/~weise/
+Danny Dig https://dig.cs.illinois.edu/
+Darioush Jalali https://darioush.github.io/
 Darko Marinov https://mir.cs.illinois.edu/~marinov/
-# Dave dropped http://davidglasser.net/ in May 2021.
-# David Glasser http://davidglasser.net/
-#Deceased: David Notkin http://www.cs.washington.edu/people/faculty/notkin/
-# http://david.saff.net/ is broken for an extended time as of Feb 2020.
-# David Saff http://david.saff.net/
-David E. Saff http://david.saff.net/
-Derek Rayside http://web.mit.edu/drayside/www/
+# Dave dropped https://davidglasser.net/ in May 2021.
+# David Glasser https://davidglasser.net/
+#Deceased: David Notkin https://www.cs.washington.edu/people/faculty/notkin/
+# https://david.saff.net/ is broken for an extended time as of Feb 2020.
+# David Saff https://david.saff.net/
+David E. Saff https://david.saff.net/
+Derek Rayside https://web.mit.edu/drayside/www/
 Deric Pang https://www.dericpang.com/
 Diego Garbervetsky https://lafhis.dc.uba.ar/~diegog
-Dilsun Kirli http://www.cs.cmu.edu/~dilsun/
-Dilsun Kn0131rln0131 http://www.cs.cmu.edu/~dilsun/
+Dilsun Kirli https://www.cs.cmu.edu/~dilsun/
+Dilsun Kn0131rln0131 https://www.cs.cmu.edu/~dilsun/
 Discrete Mathematics https://www.journals.elsevier.com/discrete-mathematics
-Doug Woos http://www.dougwoos.com/
+Doug Woos https://www.dougwoos.com/
 E. James Whitehead, Jr. https://users.soe.ucsc.edu/~ejw/
 E. James Whitehead,Â Jr. https://users.soe.ucsc.edu/~ejw/
 Earl T. Barr https://earlbarr.com/
-ECOOP '98 http://ecoop98.vub.ac.be/
-ECOOP 2004 http://www.ifi.uio.no/ecoop2004/
+ECOOP '98 https://ecoop98.vub.ac.be/
+ECOOP 2004 https://www.ifi.uio.no/ecoop2004/
 ECOOP 2008 https://ecoop08.cs.ucy.ac.cy/
 # Webpage works, but link checker gives 500 error that I can't figure out how to resolve:
 # Edward X. Wu https://www.edwardxwu.com/
 Elizabeth L. Wilmer https://www.oberlin.edu/elizabeth-wilmer
 Elwyn Berlekamp https://math.berkeley.edu/~berlek/
 Emina Torlak https://homes.cs.washington.edu/~emina/
-Erik Poll http://www.cs.ru.nl/~erikpoll/
-ESEC/FSE 2003 http://esecfse.cs.helsinki.fi/
-# ESEC/FSE 2007 http://www.idt.mdh.se/esec-fse-2007/
-Fausto Spoto http://profs.sci.univr.it/~spoto/
-# Feihui Li http://www.cse.psu.edu/~feli/
+Erik Poll https://www.cs.ru.nl/~erikpoll/
+ESEC/FSE 2003 https://esecfse.cs.helsinki.fi/
+# ESEC/FSE 2007 https://www.idt.mdh.se/esec-fse-2007/
+Fausto Spoto https://profs.sci.univr.it/~spoto/
+# Feihui Li https://www.cse.psu.edu/~feli/
 # Broken, and Yashwant K. Malaiya <malaiya@cs.colostate.edu> hasn't fixed it:
-# Fourteenth International Symposium on Software Reliability Engineering http://issre2003.cs.colostate.edu/
-FMICS 03 http://fmics.inria.fr/workshop-8/
-Frank Tip http://www.franktip.org/
-Franziska Roesner http://www.franziroesner.com/
-# FSE 2002 http://www.cs.virginia.edu/FSE-10/
-FSE 2004 http://isr.uci.edu/FSE-12/
-FTfJP'2005 http://www.cs.ru.nl/ftfjp/2005.html
-Gary T. Leavens http://www.eecs.ucf.edu/~leavens/homepage.html
-# Gideon Yuval http://research.microsoft.com/users/gideony/
-# Gideon A. Yuval http://research.microsoft.com/users/gideony/
-# Giovanni Denaro http://www.lta.disco.unimib.it/lta/personalPages/giovanniDenaro/giovanniDenaro.php
+# Fourteenth International Symposium on Software Reliability Engineering https://issre2003.cs.colostate.edu/
+FMICS 03 https://fmics.inria.fr/workshop-8/
+Frank Tip https://www.franktip.org/
+Franziska Roesner https://www.franziroesner.com/
+# FSE 2002 https://www.cs.virginia.edu/FSE-10/
+FSE 2004 https://isr.uci.edu/FSE-12/
+FTfJP'2005 https://www.cs.ru.nl/ftfjp/2005.html
+Gary T. Leavens https://www.eecs.ucf.edu/~leavens/homepage.html
+# Gideon Yuval https://research.microsoft.com/users/gideony/
+# Gideon A. Yuval https://research.microsoft.com/users/gideony/
+# Giovanni Denaro https://www.lta.disco.unimib.it/lta/personalPages/giovanniDenaro/giovanniDenaro.php
 Gordon Fraser https://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii/
-Greg J. Badros http://www.badros.com/greg/
-Greg Morrisett http://www.eecs.harvard.edu/~greg/
+Greg J. Badros https://www.badros.com/greg/
+Greg Morrisett https://www.eecs.harvard.edu/~greg/
 Hao Lü https://www.linkedin.com/in/hao-lu-86704177
 Ian Drosos https://www.iandrosos.me/
-ICALEPCS 2017 http://www.icalepcs2017.org/
-# ICSE '99 http://sunset.usc.edu/icse99/
-# ICSE 2000 http://www.ul.ie/~icse2000/
-ICSE 2000 http://web.archive.org/web/20160405001534/http://www3.ul.ie/~icse2000/
-# ICSE 2001 http://www.cs.uvic.ca/icse2001/
-ICSE 2001 http://www.icse-conferences.org/2001/
-ICSE 2003 http://www.icse-conferences.org/2003/
-ICSE'03 http://www.icse-conferences.org/2003/
-ICSE 2004 http://www.icse-conferences.org/2004/
-ICSE'04 http://www.icse-conferences.org/2004/
-ICSE 2005 http://www.icse-conferences.org/2005/Home/
-ICSE'05 http://www.icse-conferences.org/2005/Home/
-ICSE 2007 http://www.cs.ucl.ac.uk/icse07/
-ICSE'07 http://www.cs.ucl.ac.uk/icse07/
+ICALEPCS 2017 https://www.icalepcs2017.org/
+# ICSE '99 https://sunset.usc.edu/icse99/
+# ICSE 2000 https://www.ul.ie/~icse2000/
+ICSE 2000 https://web.archive.org/web/20160405001534/https://www3.ul.ie/~icse2000/
+# ICSE 2001 https://www.cs.uvic.ca/icse2001/
+ICSE 2001 https://www.icse-conferences.org/2001/
+ICSE 2003 https://www.icse-conferences.org/2003/
+ICSE'03 https://www.icse-conferences.org/2003/
+ICSE 2004 https://www.icse-conferences.org/2004/
+ICSE'04 https://www.icse-conferences.org/2004/
+ICSE 2005 https://www.icse-conferences.org/2005/Home/
+ICSE'05 https://www.icse-conferences.org/2005/Home/
+ICSE 2007 https://www.cs.ucl.ac.uk/icse07/
+ICSE'07 https://www.cs.ucl.ac.uk/icse07/
 # ICSM 2011 URL went down in a computer crash in 10/2017, may be restored later.
-# ICSM 2001 http://www.dsi.unifi.it/icsm2001/
-ICSM 2004 http://www.cs.iit.edu/~icsm2004/
+# ICSM 2001 https://www.dsi.unifi.it/icsm2001/
+ICSM 2004 https://www.cs.iit.edu/~icsm2004/
 IEEE Transactions on Software Engineering https://www.computer.org/csdl/journal/ts
-IJCAI-97 http://www.ijcai.org/past/ijcai-97/
-Irfan Ul Haq http://software.imdea.org/people/irfanul.haq/
+IJCAI-97 https://www.ijcai.org/past/ijcai-97/
+Irfan Ul Haq https://software.imdea.org/people/irfanul.haq/
 Isil Dillig https://www.cs.utexas.edu/~isil/
-ISSTA 2000 http://www.ics.uci.edu/~irus/issta/
-ISSTA 2002 http://labse.isti.cnr.it/ISSTA2002/
-# ISSTA 2004 http://cse.unl.edu/~grother/issta2004/ Gregg Rothermel deleted it.
-ISSTA 2006 http://cs.drew.edu/~emhill/ud/issta/
+ISSTA 2000 https://www.ics.uci.edu/~irus/issta/
+ISSTA 2002 https://labse.isti.cnr.it/ISSTA2002/
+# ISSTA 2004 https://cse.unl.edu/~grother/issta2004/ Gregg Rothermel deleted it.
+ISSTA 2006 https://cs.drew.edu/~emhill/ud/issta/
 ISSTA 2008 https://research.cs.vt.edu/issta08/
 ISSTA 2018 https://conf.researchr.org/home/issta-2018
 Ittai Balaban https://www.linkedin.com/in/ittaibalaban
-Iuliu Vasilescu http://web.mit.edu/iuliuv/www/
+Iuliu Vasilescu https://web.mit.edu/iuliuv/www/
 Ivan Beschastnikh https://www.cs.ubc.ca/~bestchai/
-# Jake Cockrell http://homes.cs.washington.edu/~jake/
-James R. Wilcox http://jamesrwilcox.com/
+# Jake Cockrell https://homes.cs.washington.edu/~jake/
+James R. Wilcox https://jamesrwilcox.com/
 Jason Waataja https://www.facebook.com/jason.waataja
-# Jeff Mellen http://jeffm.mit.edu/
-# Redirects to empty page as of 2/6/2008 Jeremy W. Nimmer http://alum.mit.edu/www/jwnimmer/
+# Jeff Mellen https://jeffm.mit.edu/
+# Redirects to empty page as of 2/6/2008 Jeremy W. Nimmer https://alum.mit.edu/www/jwnimmer/
 Joe Kiniry https://galois.com/team/joe-kiniry/
 Johan Östlund https://user.it.uu.se/~johos902/
 José Campos https://jose.github.io/
-Jonathan Bachrach http://people.csail.mit.edu/jrb/
+Jonathan Bachrach https://people.csail.mit.edu/jrb/
 Jonathan E. Cook https://www.cs.nmsu.edu/~jcook/
-Jonathan Jacky http://staff.washington.edu/jon/
+Jonathan Jacky https://staff.washington.edu/jon/
 Juan Caballero https://software.imdea.org/~juanca/
 Julian Dolby https://researcher.watson.ibm.com/researcher/view.php?person=us-dolby
-Justin Mazzola Paluska http://www.mit.edu/~jmp/
-Karl Koscher http://www.sysnet.ucsd.edu/~supersat/
+Justin Mazzola Paluska https://www.mit.edu/~jmp/
+Karl Koscher https://www.sysnet.ucsd.edu/~supersat/
 Karthick Jayaraman https://www.linkedin.com/in/kjayaram/
 Kevin Vu https://www.linkedin.com/in/kevinmvu/
-Kivanc Muslu http://www.kivancmuslu.com/
-Kn0131vanç Mun015Flu http://www.kivancmuslu.com/
-Konstantin Weitz http://www.konne.me/
+Kivanc Muslu https://www.kivancmuslu.com/
+Kn0131vanç Mun015Flu https://www.kivancmuslu.com/
+Konstantin Weitz https://www.konne.me/
 K. Rustan M. Leino https://www.microsoft.com/en-us/research/people/leino/
-# Laura Inozemtseva http://www.linozemtseva.com/research/
-Lee Lin http://www.leelin.com/
-# Leonardo Mariani http://www.lta.disco.unimib.it/lta/personalPages/leonardoMariani/leonardoMariani.php
-Lilian Burdy http://www-sop.inria.fr/everest/personnel/Lilian.Burdy/
+# Laura Inozemtseva https://www.linozemtseva.com/research/
+Lee Lin https://www.leelin.com/
+# Leonardo Mariani https://www.lta.disco.unimib.it/lta/personalPages/leonardoMariani/leonardoMariani.php
+Lilian Burdy https://www-sop.inria.fr/everest/personnel/Lilian.Burdy/
 Luke Zettlemoyer https://www.cs.washington.edu/people/faculty/lsz
-Magdalena Balazinska http://www.cs.washington.edu/people/faculty/magda/
-Mahmood Ali: http://www.notnoop.com/
+Magdalena Balazinska https://www.cs.washington.edu/people/faculty/magda/
+Mahmood Ali: https://www.notnoop.com/
 Mahmut Kandemir https://www.cse.psu.edu/hpcl/kandemir/
-# Manos Renieris http://cs.brown.edu/~er/
+# Manos Renieris https://cs.brown.edu/~er/
 Manos Renieris https://www.linkedin.com/in/manos-renieris-99b5531
 Manu Sridharan https://manu.sridharan.net/
 Marcelo d'Amorim https://www.cin.ufpe.br/~damorim/
-Martin Rinard http://people.csail.mit.edu/rinard/
+Martin Rinard https://people.csail.mit.edu/rinard/
 Martin Kellogg https://homes.cs.washington.edu/~kelloggm/
 Martin Schäf https://www.martinschaef.de/
-#Deceased: Mary Jean Harrold http://www.cc.gatech.edu/~harrold/
-Mary Shaw http://spoke.compose.cs.cmu.edu/shaweb/
-Massimo Merro http://profs.sci.univr.it/~merro/
+#Deceased: Mary Jean Harrold https://www.cc.gatech.edu/~harrold/
+Mary Shaw https://spoke.compose.cs.cmu.edu/shaweb/
+Massimo Merro https://profs.sci.univr.it/~merro/
 Mauro Pezzè https://www.inf.usi.ch/faculty/pezze/
 #Don't use "MIT" because it is a substring of other strings
-# MIT http://web.mit.edu/
+# MIT https://web.mit.edu/
 MIT Computer Science & Artificial Intelligence Laboratory https://www.csail.mit.edu/
 MIT Computer Science and Artificial Intelligence Laboratory https://www.csail.mit.edu/
 MIT Artificial Intelligence Laboratory https://www.csail.mit.edu/
 MIT Department of Electrical Engineering and Computer Science https://www.eecs.mit.edu/
 MIT Laboratory for Computer Science https://www.csail.mit.edu/
-Michael Bayne http://samskivert.com/
-Michael Carbin http://people.csail.mit.edu/mcarbin/
-Michael D. Ernst http://homes.cs.washington.edu/~mernst/
-Michael Ernst http://homes.cs.washington.edu/~mernst/
-# Michael Harder http://web.mit.edu/mharder/www/
+Michael Bayne https://samskivert.com/
+Michael Carbin https://people.csail.mit.edu/mcarbin/
+Michael D. Ernst https://homes.cs.washington.edu/~mernst/
+Michael Ernst https://homes.cs.washington.edu/~mernst/
+# Michael Harder https://web.mit.edu/mharder/www/
 Microsoft Research https://www.microsoft.com/en-us/research/
 Mohsen Vakilian https://reprogrammer.github.io/
-# MSR 2007 http://msr.uwaterloo.ca/msr2007/
-# M-TOOS 2006 http://research.microsoft.com/conferences/mtoos06/
-Nancy Lynch http://people.csail.mit.edu/lynch/
-# Neelam Gupta http://www.cs.arizona.edu/people/ngupta/
-OOPSLA 2004 http://www.oopsla.org/2004/ShowPage.do?id=Home
-OOPSLA 2005 http://www.oopsla.org/2005/ShowPage.do?id=Home
-OOPSLA 2007 http://www.oopsla.org/oopsla2007/
-OOPSLA 2008 http://www.oopsla.org/oopsla2008/
-# Broken as of 1/2014 Ophelia Chesley http://www.research.rutgers.edu/~ochesley/
-Orna Raz http://www-2.cs.cmu.edu/~ornar/
-# PASTE'04 http://www.st.cs.uni-saarland.de/paste/
-PASTE 2005 http://homes.cs.washington.edu/~mernst/meetings/paste2005/
+# MSR 2007 https://msr.uwaterloo.ca/msr2007/
+# M-TOOS 2006 https://research.microsoft.com/conferences/mtoos06/
+Nancy Lynch https://people.csail.mit.edu/lynch/
+# Neelam Gupta https://www.cs.arizona.edu/people/ngupta/
+OOPSLA 2004 https://www.oopsla.org/2004/ShowPage.do?id=Home
+OOPSLA 2005 https://www.oopsla.org/2005/ShowPage.do?id=Home
+OOPSLA 2007 https://www.oopsla.org/oopsla2007/
+OOPSLA 2008 https://www.oopsla.org/oopsla2008/
+# Broken as of 1/2014 Ophelia Chesley https://www.research.rutgers.edu/~ochesley/
+Orna Raz https://www-2.cs.cmu.edu/~ornar/
+# PASTE'04 https://www.st.cs.uni-saarland.de/paste/
+PASTE 2005 https://homes.cs.washington.edu/~mernst/meetings/paste2005/
 Paul Amman https://cs.gmu.edu/~pammann/
-# Paul Pham (no homepage as of 2/2016) http://homes.cs.washington.edu/~ppham/
-Paul Vines http://paulvines.com/
+# Paul Pham (no homepage as of 2/2016) https://homes.cs.washington.edu/~ppham/
+Paul Vines https://paulvines.com/
 Paulo Barros https://www.cin.ufpe.br/~pbsf/
 Pavel Panchekha https://pavpanchekha.com/
-# Peter Müller http://www.pm.inf.ethz.ch/people/person-detail.html?persid=112017
+# Peter Müller https://www.pm.inf.ethz.ch/people/person-detail.html?persid=112017
 Peter Müller https://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html
 Philip J. Guo https://pg.ucsd.edu/
 Philip Jia Guo https://pg.ucsd.edu/
-Philip Koopman http://users.ece.cmu.edu/~koopman/
+Philip Koopman https://users.ece.cmu.edu/~koopman/
 # LinkedIn URLs aren't very canonical
 # Pieter Hooimeijer https://www.linkedin.com/pub/pieter-hooimeijer/29/323/a97
-PLAS 2007 http://www.cs.umd.edu/~mwh/PLAS07/
-PLDI 2008 http://pldi2008.cs.ucr.edu/
+PLAS 2007 https://www.cs.umd.edu/~mwh/PLAS07/
+PLDI 2008 https://pldi2008.cs.ucr.edu/
 Rahul Gopinath https://rahul.gopinath.org/
 Rashmi Mudduluru https://sites.google.com/view/rashmi/home
-Ravi Bhoraskar http://ravi.bhoraskar.com/
+Ravi Bhoraskar https://ravi.bhoraskar.com/
 Raymond Cheng https://www.raymondcheng.net/
 Reid Holmes https://www.cs.ubc.ca/~rtholmes/
 René Just https://people.cs.umass.edu/~rjust/
-# Empty as of 11/2002 and 2/2014: Roger F. Crew http://www-cs-students.stanford.edu/~crew/
+# Empty as of 11/2002 and 2/2014: Roger F. Crew https://www-cs-students.stanford.edu/~crew/
 # Rui Maranhao publishes as Rui Abreu
 Rui Abreu https://ruimaranhao.com/
-Ruth Anderson http://homes.cs.washington.edu/~rea/
-# RV'01 http://ase.arc.nasa.gov/rv/
-Sai Zhang http://zhang-sai.github.io/
-Saman Amarasinghe http://people.csail.mit.edu/saman/
-# Santanu Kumar Dash http://santanu.uk/
-# Saurabh Sinha http://www.cc.gatech.edu/~sinha/
-SAVCBS 2004 http://www.eecs.ucf.edu/~leavens/SAVCBS/2004/
+Ruth Anderson https://homes.cs.washington.edu/~rea/
+# RV'01 https://ase.arc.nasa.gov/rv/
+Sai Zhang https://zhang-sai.github.io/
+Saman Amarasinghe https://people.csail.mit.edu/saman/
+# Santanu Kumar Dash https://santanu.uk/
+# Saurabh Sinha https://www.cc.gatech.edu/~sinha/
+SAVCBS 2004 https://www.eecs.ucf.edu/~leavens/SAVCBS/2004/
 Sebastian Porst https://www.linkedin.com/in/sebastianporst
 Serdar Tasiran https://www.linkedin.com/in/serdar-tasiran-7841087/
 Sergio Yovine https://www.linkedin.com/in/sergio-yovine-51b2b943/
-Seungyeop Han http://haneul.github.io
+Seungyeop Han https://haneul.github.io
 Seth Cooper https://www.ccs.neu.edu/home/scooper/
-Seung Woo Son http://users.eecs.northwestern.edu/~sson/
-Shay Artzi http://people.csail.mit.edu/artzi/
-Shriram Krishnamurthi http://cs.brown.edu/~sk/
+Seung Woo Son https://users.eecs.northwestern.edu/~sson/
+Shay Artzi https://people.csail.mit.edu/artzi/
+Shriram Krishnamurthi https://cs.brown.edu/~sk/
 Shuvendu K. Lahiri https://www.microsoft.com/en-us/research/people/shuvendu/
 Siwakorn Srisakaokul https://sping128.github.io/
 Software Tools for Technology Transfer https://sttt.cs.uni-dortmund.de
-Spencer Pearson http://speezepearson.github.io/
+Spencer Pearson https://speezepearson.github.io/
 Sri Hari Krishna Narayanan https://www.mcs.anl.gov/~snarayan/
-Stelios Sidiroglou http://people.csail.mit.edu/stelios/
-Stephen J. Garland http://people.csail.mit.edu/garland/
-Stephen McCamant http://people.csail.mit.edu/smcc/
+Stelios Sidiroglou https://people.csail.mit.edu/stelios/
+Stephen J. Garland https://people.csail.mit.edu/garland/
+Stephen McCamant https://people.csail.mit.edu/smcc/
 Steve Anton https://www.linkedin.com/in/steve-anton-944aa36b
 Steven A. Wolfman https://www.cs.ubc.ca/~wolf/
-Steven P. Reiss http://cs.brown.edu/~spr/
-# Stuart Pernsteiner http://homes.cs.washington.edu/~spernste/
+Steven P. Reiss https://cs.brown.edu/~spr/
+# Stuart Pernsteiner https://homes.cs.washington.edu/~spernste/
 Sunghun Kim https://cse.hkust.edu.hk/~hunkim/
 Suzanne Millstein https://www.linkedin.com/in/suzanne-millstein-a3770956/
-Tao Xie http://taoxie.cs.illinois.edu/
+Tao Xie https://taoxie.cs.illinois.edu/
 Thomas Ball https://www.microsoft.com/en-us/research/people/tball/
-Thomas Anderson http://www.cs.washington.edu/people/faculty/tom/
-Thomas E. Anderson http://www.cs.washington.edu/people/faculty/tom/
-Thomas Jensen http://www.irisa.fr/lande/jensen/
-Thomas Zimmermann http://thomas-zimmermann.com/
-Todd D. Millstein http://web.cs.ucla.edu/~todd/
+Thomas Anderson https://www.cs.washington.edu/people/faculty/tom/
+Thomas E. Anderson https://www.cs.washington.edu/people/faculty/tom/
+Thomas Jensen https://www.irisa.fr/lande/jensen/
+Thomas Zimmermann https://thomas-zimmermann.com/
+Todd D. Millstein https://web.cs.ucla.edu/~todd/
 Todd W. Schiller https://toddschiller.com/
 Todd Schiller https://toddschiller.com/
 # These two lines have a different space (ASCII 40, 4240) between "Ne" and "Win"
-# Toh Ne Win http://web.mit.edu/tohn/www/
-# Toh NeÃ‚Â Win http://web.mit.edu/tohn/www/
-University of Washington Department of Computer Science and Engineering http://www.cs.washington.edu/
-# University of Washington http://www.washington.edu/
-Victor Braberman http://lafhis.dc.uba.ar/en/~vbraber/
+# Toh Ne Win https://web.mit.edu/tohn/www/
+# Toh NeÃ‚Â Win https://web.mit.edu/tohn/www/
+University of Washington Department of Computer Science and Engineering https://www.cs.washington.edu/
+# University of Washington https://www.washington.edu/
+Victor Braberman https://lafhis.dc.uba.ar/en/~vbraber/
 Vijay Ganesh https://ece.uwaterloo.ca/~vganesh/
-# Temporarily commented out to avoid breaking http://homes.cs.washington.edu/~mernst/pubs/haloop-vldb2012-abstract.html
-# VLDB 2010 http://vldb2010.org/
-# Broken as of 11/4/2006, 2/8/2008, 8/19/2008: VMCAI'03 http://www.cs.nyu.edu/vmcai03/
-VSTTE http://vstte.ethz.ch/
-Wei Huang http://www.cs.rpi.edu/~huangw5/
+# Temporarily commented out to avoid breaking https://homes.cs.washington.edu/~mernst/pubs/haloop-vldb2012-abstract.html
+# VLDB 2010 https://vldb2010.org/
+# Broken as of 11/4/2006, 2/8/2008, 8/19/2008: VMCAI'03 https://www.cs.nyu.edu/vmcai03/
+VSTTE https://vstte.ethz.ch/
+Wei Huang https://www.cs.rpi.edu/~huangw5/
 Weng-Fai Wong https://www.comp.nus.edu.sg/~wongwf/
 Werner Dietl https://ece.uwaterloo.ca/~wdietl/
 Werner M. Dietl https://ece.uwaterloo.ca/~wdietl/
 Will Scott https://wills.co.tt/#main
-Willem Visser http://www.cs.sun.ac.za/~wvisser/
-William G. Griswold http://cseweb.ucsd.edu/~wgg/
+Willem Visser https://www.cs.sun.ac.za/~wvisser/
+William G. Griswold https://cseweb.ucsd.edu/~wgg/
 William Thies https://billthies.net
-Wing Lam http://winglam2.web.engr.illinois.edu/
+Wing Lam https://winglam2.web.engr.illinois.edu/
 # The shorter name substitutes within the longer ones, so omit one or the other.
 # WODA 2003 https://www.cs.nmsu.edu/~jcook/woda2003/
 Workshop on Dynamic Analysis (WODA 2003) https://www.cs.nmsu.edu/~jcook/woda2003/
 WODA 2003: ICSE Workshop on Dynamic Analysis https://www.cs.nmsu.edu/~jcook/woda2003/
-# WS-MaTe 2006 http://www.selab.isti.cnr.it/ws-mate/
-Xi Victoria Lin http://victorialin.net/
-Xi Wang http://homes.cs.washington.edu/~xi/
-# Xiaoxia Ren http://www.research.rutgers.edu/~xren/
-Yannis Smaragdakis http://cgi.di.uoa.gr/~smaragd/
-Yingyi Bu http://sigmod.github.io/
+# WS-MaTe 2006 https://www.selab.isti.cnr.it/ws-mate/
+Xi Victoria Lin https://victorialin.net/
+Xi Wang https://homes.cs.washington.edu/~xi/
+# Xiaoxia Ren https://www.research.rutgers.edu/~xren/
+Yannis Smaragdakis https://cgi.di.uoa.gr/~smaragd/
+Yingyi Bu https://sigmod.github.io/
 Yiqun Chen https://yiqunchen.github.io/
-Yoav Zibin http://yoav-zibin.github.io/homepage/
-Yoonsik Cheon http://www.cs.utep.edu/cheon/
+Yoav Zibin https://yoav-zibin.github.io/homepage/
+Yoonsik Cheon https://www.cs.utep.edu/cheon/
 Yu Feng https://fredfeng.github.io/
-#Permanent: Yuriy Brun http://alum.mit.edu/www/brun/
+#Permanent: Yuriy Brun https://alum.mit.edu/www/brun/
 Yuriy Brun https://people.cs.umass.edu/~brun/
-Zachary Tatlock http://homes.cs.washington.edu/~ztatlock/
+Zachary Tatlock https://homes.cs.washington.edu/~ztatlock/
 Zhen Zhang https://zhen-zhang.com/
-Zoran Popovic http://homes.cs.washington.edu/~zoran/
-Zoran Popovin0107 http://homes.cs.washington.edu/~zoran/
+Zoran Popovic https://homes.cs.washington.edu/~zoran/
+Zoran Popovin0107 https://homes.cs.washington.edu/~zoran/
