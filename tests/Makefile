@@ -2,8 +2,8 @@ all: python-style test
 
 PYTHON_FILES=../hevea-add-verbatim-linenos
 python-style:
-	yapf -i --style='{column_limit: 100}' ${PYTHON_FILES}
-	pylint -f parseable --disable=W,line-too-long,invalid-name ${PYTHON_FILES}
+	ruff format ${PYTHON_FILES}
+	ruff check ${PYTHON_FILES} --fix
 
 test:
 # html-update-link-dates-test is not automated.
