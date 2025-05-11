@@ -21,6 +21,6 @@ jobs:
         pipx install ruff
         pipx ensurepath
     - name: Install shellcheck and checkbashisms
-      run: sudo apt install shfmt shellcheck devscripts
+      run: sudo apt install perltidy shfmt shellcheck devscripts
     - name: Check style
       run: make style-check
