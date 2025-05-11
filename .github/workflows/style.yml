@@ -23,4 +23,4 @@ jobs:
     - name: Install shellcheck and checkbashisms
       run: sudo apt install shfmt shellcheck devscripts
     - name: Check style
-      run: make check-style
+      run: make style-check
