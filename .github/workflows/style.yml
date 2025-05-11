@@ -17,7 +17,9 @@ jobs:
         python-version: '3.13.3'
     - run: python --version
     - name: Install Python programs
-      run: pip install ruff
+      run: |
+        pipx install ruff
+        pipx ensurepath
     - name: Install shellcheck and checkbashisms
       run: sudo apt install shfmt shellcheck devscripts
     - name: Check style
