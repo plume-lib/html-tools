@@ -25,24 +25,23 @@ if [ "$#" -ne 2 ] || ! [ -d "$1" ] || ! [ -f "$2" ]; then
   exit 1
 fi
 
-patchIt () {
-  for f in "$1"/*.html ; do
-    if [ -f "$f" ]; then     # if no .html files exist, f is literal "*.html"
+patchIt() {
+  for f in "$1"/*.html; do
+    if [ -f "$f" ]; then # if no .html files exist, f is literal "*.html"
       tmpfile=$(mktemp patch_favicon_XXXXX)
       # This creates tmpfile, with the same permissions as $f.
       # The next command will overwrite it but preserve the permissions.
       # Hat tip to http://superuser.com/questions/170226/standard-way-to-duplicate-a-files-permissions for this trick.
       \cp -p "$f" "$tmpfile"
       sed -e " s%<head>\$%<head><link rel=\"icon\" href=\"$2\" type=\"image/png\"/>%" "$f" > "$tmpfile"
-      if ! cmp "$f" "$tmpfile" >/dev/null 2>&1
-      then
+      if ! cmp "$f" "$tmpfile" > /dev/null 2>&1; then
         mv -f "$tmpfile" "$f"
       else
         rm -f "$tmpfile"
       fi
-    fi;
-  done ;
-  for d in "$1"/* ; do
+    fi
+  done
+  for d in "$1"/*; do
     if [ -d "$d" ]; then
       # echo "$(basename "$0") descending to $d"
       patchIt "$d" "../$2"
