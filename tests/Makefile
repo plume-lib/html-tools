@@ -1,6 +1,6 @@
 all: python-style test
 
-PYTHON_FILES=../hevea-add-verbatim-linenos
+PYTHON_FILES:=../hevea-add-verbatim-linenos
 python-style:
 	ruff format ${PYTHON_FILES}
 	ruff check ${PYTHON_FILES} --fix
