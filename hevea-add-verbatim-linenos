@@ -21,7 +21,7 @@ label_line = {}
 label_re = re.compile(r"\\newlabel{([^}]*)}{{([0-9]*)}{([0-9]*)}}")
 lineref_re = re.compile(r'(<a href="#([^"]*)">)(\?\?)(</a>)')
 
-with Path.open(auxfile) as auxfile_handle:
+with Path.open(Path(auxfile)) as auxfile_handle:
     for line in auxfile_handle:
         m = label_re.match(line)
         if m:
@@ -29,7 +29,7 @@ with Path.open(auxfile) as auxfile_handle:
 # print label_line
 
 
-def replace_line(match):
+def replace_line(match: re.Match[str]) -> str:
     """Replace a line.
 
     Args:
@@ -42,7 +42,7 @@ def replace_line(match):
     return match.group(1) + label_line[label] + match.group(4)
 
 
-with Path.open(htmlfile) as htmlfile_handle:
+with Path.open(Path(htmlfile)) as htmlfile_handle:
     for line in htmlfile_handle:
         line = lineref_re.sub(replace_line, line)
         print(line)

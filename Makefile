@@ -1,5 +1,5 @@
 style-fix: perl-style-fix python-style-fix shell-style-fix
-style-check: perl-style-check python-style-check shell-style-check
+style-check: perl-style-check python-style-check python-typecheck shell-style-check
 
 PERL_FILES   := $(shell grep -r -l --exclude='*~' --exclude='*.tar' --exclude='*.tdy' --exclude=gradlew --exclude-dir=.git '^\#! \?\(/bin/\|/usr/bin/env \)perl'   | grep -v addrfilter | grep -v cronic-orig | grep -v mail-stackoverflow.sh)
 perl-style-fix: install-ruff
