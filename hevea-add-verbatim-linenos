@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
-"""Given a file produced by Hevea that contains "??" in place of line
-references, replace those by actual line numbers, read from an aux file.
+
+"""In Hevea output, replace "??" by actual line numbers, read from an aux file.
 
 Invoke like:  hevea-add-verbatim-linenos mydoc.aux mydoc.html > mydoc-fixed.html
 """
@@ -10,6 +10,7 @@ Invoke like:  hevea-add-verbatim-linenos mydoc.aux mydoc.html > mydoc-fixed.html
 
 import re
 import sys
+from pathlib import Path
 
 auxfile = sys.argv[1]
 htmlfile = sys.argv[2]
@@ -17,10 +18,10 @@ htmlfile = sys.argv[2]
 # map from label to line
 label_line = {}
 
-label_re = re.compile("\\\\newlabel{([^}]*)}{{([0-9]*)}{([0-9]*)}}")
-lineref_re = re.compile('(<a href="#([^"]*)">)(\\?\\?)(</a>)')
+label_re = re.compile(r"\\newlabel{([^}]*)}{{([0-9]*)}{([0-9]*)}}")
+lineref_re = re.compile(r'(<a href="#([^"]*)">)(\?\?)(</a>)')
 
-with open(auxfile) as auxfile_handle:
+with Path.open(Path(auxfile)) as auxfile_handle:
     for line in auxfile_handle:
         m = label_re.match(line)
         if m:
@@ -28,13 +29,20 @@ with open(auxfile) as auxfile_handle:
 # print label_line
 
 
-def replace_line(match):
-    """argument match is a match for lineref_re"""
+def replace_line(match: re.Match[str]) -> str:
+    """Replace a line.
+
+    Args:
+        match: a match for lineref_re.
+
+    Returns:
+        The match with the replacement done.
+    """
     label = match.group(2)
     return match.group(1) + label_line[label] + match.group(4)
 
 
-with open(htmlfile) as htmlfile_handle:
+with Path.open(Path(htmlfile)) as htmlfile_handle:
     for line in htmlfile_handle:
         line = lineref_re.sub(replace_line, line)
         print(line)
