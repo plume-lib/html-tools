@@ -22,6 +22,8 @@ jobs:
 
       - run: make -C tests
 
+      - run: make style-check
+
 workflows:
   version: 2
   build:
