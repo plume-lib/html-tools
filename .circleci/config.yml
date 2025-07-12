@@ -18,9 +18,18 @@ jobs:
           paths:
             - ".git"
 
-      - run: pip install ruff
+      - run:
+          name: install dependencies
+          command: |
+            sudo apt update
+            sudo apt install -y perltidy shfmt shellcheck devscripts pip pipx
+            pipx ensurepath
+            pip install ruff
+            pipx install mypy
 
       - run: make -C tests
+
+      - run: make style-check
 
 workflows:
   version: 2
