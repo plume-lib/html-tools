@@ -18,6 +18,7 @@ jobs:
     - run: python --version
     - name: Install Python programs
       run: |
+        pip install mypy
         pipx install ruff
         pipx ensurepath
     - name: Install shellcheck and checkbashisms
