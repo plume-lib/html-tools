@@ -4,7 +4,8 @@
     "config:recommended",
     ":automergeAll",
     ":automergeRequireAllStatusChecks",
-    "schedule:nonOfficeHours"
+    "schedule:nonOfficeHours",
+    ":disableDependencyDashboard"
   ],
   "timezone": "America/Los_Angeles"
 }
