@@ -24,6 +24,6 @@ jobs:
       - name: Install shellcheck and checkbashisms
         run: |
           sudo apt update
-          sudo apt install -y perltidy shfmt shellcheck devscripts
+          sudo apt -y install perltidy shfmt shellcheck devscripts
       - name: Check style
         run: make style-check

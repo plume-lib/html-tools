@@ -25,7 +25,7 @@ jobs:
           name: install dependencies
           command: |
             sudo apt update
-            sudo apt install -y perltidy shfmt shellcheck devscripts pip pipx
+            sudo apt -y install perltidy shfmt shellcheck devscripts pip pipx
             pipx ensurepath
             pip install ruff
             pipx install mypy
