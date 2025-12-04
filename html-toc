@@ -24,27 +24,30 @@ my $debug = 0;
 
 # $debug = 1;
 
-sub enter_level {
+sub enter_level
+{
 
     # called with cursor at start of line.
-    $output .= ( ( " " x ( $level * 4 ) ) . "<ul>$eol" );
+    $output .= ((" " x ($level * 4)) . "<ul>$eol");
     $level++;
 
     # returns with cursor at start of line.
 }
 
-sub exit_level {
+sub exit_level
+{
 
     # always called with an open <li>
     $level--;
     $output .= "</li>$eol";
-    $output .= ( ( " " x ( $level * 4 ) ) . "</ul>" );
+    $output .= ((" " x ($level * 4)) . "</ul>");
 
     # returns with an open <li>
 }
 
-sub found_header ( $$$$ ) {
-    my ( $thishlevel, $anchorname, $secname1, $secname2 ) = @_;
+sub found_header ( $$$$ )
+{
+    my ($thishlevel, $anchorname, $secname1, $secname2) = @_;
 
     # Remove leading and trailing whitespace in section title.
     $secname1 =~ s/^[ \t]+//;
@@ -52,60 +55,73 @@ sub found_header ( $$$$ ) {
     $secname2 =~ s/^[ \t]+//;
     $secname2 =~ s/[ \t]+$//;
     my $sectitle;
-    if ( $secname1 eq "" ) {
+    if ($secname1 eq "")
+    {
         $sectitle = $secname2;
     }
-    elsif ( $secname2 eq "" ) {
+    elsif ($secname2 eq "")
+    {
         $sectitle = $secname1;
     }
-    else {
-# $errors .= "Merging two section titles (\"$secname1\" and \"$secname2\") found on one line: $_";
-# next;
+    else
+    {
+        # $errors .= "Merging two section titles (\"$secname1\" and \"$secname2\") found on one line: $_";
+        # next;
         $sectitle = "$secname1 $secname2";
     }
 
     # if $level >= $thishlevel, we have an open <li>
-    while ( $level > $thishlevel ) {
+    while ($level > $thishlevel)
+    {
         exit_level();
     }
 
     # close this <li>, unless we're going deeper
-    $output .= "</li>" if ( $level == $thishlevel );
+    $output .= "</li>" if ($level == $thishlevel);
     $output .= "$eol" unless $level == 0;
-    while ( $level < $thishlevel ) {
+    while ($level < $thishlevel)
+    {
         enter_level();
-        $output .= ( " " x ( $level * 4 - 2 ) ) . "<li>$eol"
+        $output .= (" " x ($level * 4 - 2)) . "<li>$eol"
           if $level < $thishlevel;
     }
-    $output .= ( ( " " x ( $level * 4 - 2 ) )
-        . "<li><a href=\"#$anchorname\">$sectitle</a>" );
-    if ( $level == 1 ) { $num_named_1++; }
+    $output .=
+      ((" " x ($level * 4 - 2)) . "<li><a href=\"#$anchorname\">$sectitle</a>");
+    if ($level == 1) { $num_named_1++; }
 
 }
 
 # Main loop
 
-while (<>) {
-    if ( !defined($eol) ) {
-        if (/\r\n$/) {
+while (<>)
+{
+    if (!defined($eol))
+    {
+        if (/\r\n$/)
+        {
             $eol = "\r\n";
         }
-        elsif (/\n$/) {
+        elsif (/\n$/)
+        {
             $eol = "\n";
         }
-        elsif (/\r$/) {
+        elsif (/\r$/)
+        {
             $eol = "\r";
         }
-        else {
+        else
+        {
             die "Bad line ending: $_";
         }
     }
-    if (/^<!--/) {
+    if (/^<!--/)
+    {
         next;
     }
-    elsif (/<!-- omit from toc -->|<omit from toc>/) {
+    elsif (/<!-- omit from toc -->|<omit from toc>/)
+    {
 
-   # Check <omit from toc> because sometimes, a HTML comment is not appropriate.
+        # Check <omit from toc> because sometimes, a HTML comment is not appropriate.
         next;
     }
     elsif (
@@ -124,14 +140,15 @@ while (<>) {
       )
     {
         if ($debug) { print STDERR "match 3: <$1><$2><$3><$4><$5>\n"; }
-        if ( $1 ne $5 ) {
+        if ($1 ne $5)
+        {
             $errors .= "Non-matching heading tags $1 and $5: $_";
         }
         my $thishlevel = $1;
         my $anchorname = $2;
         my $secname1   = $3;
         my $secname2   = $4;
-        found_header( $thishlevel, $anchorname, $secname1, $secname2 );
+        found_header($thishlevel, $anchorname, $secname1, $secname2);
     }
     elsif (
         /<h([1-9])   # open the h start tag
@@ -145,35 +162,42 @@ while (<>) {
       )
     {
         if ($debug) { print STDERR "match 3: <$1><$2><$3><$4>\n"; }
-        if ( $1 ne $4 ) {
+        if ($1 ne $4)
+        {
             $errors .= "Non-matching heading tags $1 and $4: $_";
         }
         my $thishlevel = $1;
         my $anchorname = $2;
         my $secname1   = $3;
         my $secname2   = "";
-        found_header( $thishlevel, $anchorname, $secname1, $secname2 );
+        found_header($thishlevel, $anchorname, $secname1, $secname2);
     }
-    elsif (/<h([1-9])>(.*)<\/h([1-9])>/) {
-        if ( $1 == 1 ) {
+    elsif (/<h([1-9])>(.*)<\/h([1-9])>/)
+    {
+        if ($1 == 1)
+        {
             $num_unnamed_1++;
         }
         $errors .= "$ARGV:$.: No <a name=...> tag: $_";
     }
-    elsif (/<h([1-9])>/) {
+    elsif (/<h([1-9])>/)
+    {
         $errors .= "$ARGV:$.: No </h$1> tag: $_";
     }
 }
-continue {
+continue
+{
     # Reset line numbers; example from "eof" text in "man perlfunc".
     close ARGV if eof;    # Not eof()!
 }
 
-while ( $level > 0 ) {
+while ($level > 0)
+{
     exit_level();
 }
 $output .= "$eol";
-if ( $num_named_1 + $num_unnamed_1 < 2 ) {
+if ($num_named_1 + $num_unnamed_1 < 2)
+{
 
     # There is only one top-level (<h1>) item.
     # Assume <h1> is the page title, and the h2, h3, h4 etc are the ones
@@ -184,7 +208,8 @@ if ( $num_named_1 + $num_unnamed_1 < 2 ) {
     # remove top-level item.
     $output =~ s/^  <li>.*${eol}//;
     $output =~ s/<\/li>${eol}$/${eol}/;
-    if ( $num_unnamed_1 == 1 ) {
+    if ($num_unnamed_1 == 1)
+    {
 
         # Remove error from output
         $errors =~ s/^.*: No <a name=\.\.\.> tag: <h1>[^${eol}]*${eol}//;

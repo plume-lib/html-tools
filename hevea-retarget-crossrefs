@@ -38,7 +38,6 @@
 # \section commands:
 # https://sympa.inria.fr/sympa/arc/hevea/2012-09/msg00006.html
 
-
 # This script does not work with in-place editing (perl's -i argument).
 
 # use strict;
@@ -46,6 +45,7 @@
 # $WARNING = 1;
 
 $debug = 0;
+
 # $debug = 1;
 
 # if (scalar(@ARGV) != 1) {
@@ -55,38 +55,51 @@ $debug = 0;
 
 push @lines, $_;
 
-END {
+END
+{
 
-  for (my $i = 0; $i<scalar(@lines); $i++) {
-    # Handle lines *with* htoc, substituting it by the first other anchor and moving others forward.
-    if ($lines[$i] =~ s:<A NAME="(htoc[0-9]+)">(((Chapter&#XA0;)?([0-9]+|[A-Z]))(\.[0-9]+)*)(</A>)(.*?)(<A NAME="(.*?)">)</A>((<A NAME=".*"></A>)*)(</H[0-9]+>):$9$2$7$11$8$13:) {
-      $mapping{$1} = $10;
-      if ($debug) { print STDERR "$1 => $mapping{$1}\n"; }
-    }
-    # Move around the "<A NAME=" for sections *without* htoc (anything not in
-    # tocdepth, which is not in a table of contents).  If the anchor comes
-    # within but at the end of a header, then when going to that URL, some browsers
-    # will position the header off the top of the screen.  Putting the
-    # anchor at the beginning of the header fixes this problem.
-    $lines[$i] =~ s:(<(H[345]) CLASS="((sub)*section|paragraph)">)(.*?)(<A NAME=".*">(</A><A NAME=".*">)*)(</A></\2>):$1$6$5$8:;
-  }
+    for (my $i = 0 ; $i < scalar(@lines) ; $i++)
+    {
+        # Handle lines *with* htoc, substituting it by the first other anchor and moving others forward.
+        if ($lines[$i] =~
+            s:<A NAME="(htoc[0-9]+)">(((Chapter&#XA0;)?([0-9]+|[A-Z]))(\.[0-9]+)*)(</A>)(.*?)(<A NAME="(.*?)">)</A>((<A NAME=".*"></A>)*)(</H[0-9]+>):$9$2$7$11$8$13:
+           )
+        {
+            $mapping{$1} = $10;
+            if ($debug) { print STDERR "$1 => $mapping{$1}\n"; }
+        }
 
-  foreach my $line (@lines) {
-    if ($line =~ /<A HREF="#(htoc[0-9]+)">/) {
-      my $htoc = $1;
-      my $replacement = $mapping{$htoc};
-      if (defined($replacement)) {
-        if ($debug) { print STDERR $line; }
-        # Also remove "Chapter" if present, for brevity
-        $line =~ s/$htoc(">)(Chapter&#XA0;)?/$replacement$1/;
-        if ($debug) { print STDERR $line; }
-      } else {
-        print STDERR "No symbolic name for section $htoc\n";
-      }
+        # Move around the "<A NAME=" for sections *without* htoc (anything not in
+        # tocdepth, which is not in a table of contents).  If the anchor comes
+        # within but at the end of a header, then when going to that URL, some browsers
+        # will position the header off the top of the screen.  Putting the
+        # anchor at the beginning of the header fixes this problem.
+        $lines[$i] =~
+          s:(<(H[345]) CLASS="((sub)*section|paragraph)">)(.*?)(<A NAME=".*">(</A><A NAME=".*">)*)(</A></\2>):$1$6$5$8:;
     }
-    $line =~ s/(<IMG SRC="([^"]+\.[^".]+)")>/$1 ALT="$2">/g;
-    print $line;
-  }
+
+    foreach my $line (@lines)
+    {
+        if ($line =~ /<A HREF="#(htoc[0-9]+)">/)
+        {
+            my $htoc        = $1;
+            my $replacement = $mapping{$htoc};
+            if (defined($replacement))
+            {
+                if ($debug) { print STDERR $line; }
+
+                # Also remove "Chapter" if present, for brevity
+                $line =~ s/$htoc(">)(Chapter&#XA0;)?/$replacement$1/;
+                if ($debug) { print STDERR $line; }
+            }
+            else
+            {
+                print STDERR "No symbolic name for section $htoc\n";
+            }
+        }
+        $line =~ s/(<IMG SRC="([^"]+\.[^".]+)")>/$1 ALT="$2">/g;
+        print $line;
+    }
 
 }
 

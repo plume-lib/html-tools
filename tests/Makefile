@@ -1,9 +1,4 @@
-all: python-style test
-
-PYTHON_FILES:=../hevea-add-verbatim-linenos
-python-style:
-	ruff format ${PYTHON_FILES}
-	ruff check ${PYTHON_FILES} --fix
+all: test
 
 test:
 # html-update-link-dates-test is not automated.
