@@ -11,17 +11,12 @@ jobs:
         with:
           fetch-depth: 1
           show-progress: false
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: '3.14.1'
-      - run: python --version
-      - name: Install Python `uv`
-        run: |
-          curl -LsSf https://astral.sh/uv/install.sh | sh
+      - run: sudo apt update
       - name: Install shellcheck and checkbashisms
-        run: |
-          sudo apt update
-          sudo apt -y install perltidy shfmt shellcheck devscripts
+        run: sudo apt -y install shfmt shellcheck devscripts
+      - name: Install markdownlint
+        run: npm install markdownlint-cli2 --global
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
       - name: Check style
         run: make style-check
