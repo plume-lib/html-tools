@@ -21,12 +21,16 @@ jobs:
           paths:
             - ".git"
 
+      - run: sudo apt update
       - run:
-          name: install dependencies
-          command: |
-            sudo apt update
-            sudo apt -y install perltidy shfmt shellcheck devscripts
-            curl -LsSf https://astral.sh/uv/install.sh | sh
+          name: Install dependencies via apt
+          command: sudo apt -y install shfmt shellcheck devscripts
+      - run:
+          name: Install markdownlint
+          command: npm install markdownlint-cli2 --global
+      - run:
+          name: Install uv
+          command: curl -LsSf https://astral.sh/uv/install.sh | sh
 
       - run: make -C tests
 
