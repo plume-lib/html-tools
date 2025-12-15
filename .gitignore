@@ -1,7 +1,5 @@
 *.bak
 *.tdy
 
+# Obtained via Git
 .plume-scripts
-.markdownlint-cli2.yaml
-.pymarkdown
-.ruff.toml
