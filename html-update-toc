@@ -101,7 +101,7 @@ FILELOOP: for my $file (@ARGV)
         }
         next;
     }
-    if (!open(FILE, $file))
+    if (!open(FILE, '<', $file))
     {
         print STDERR "Skipping $file:  can't open\n";
         next;
@@ -131,7 +131,13 @@ FILELOOP: for my $file (@ARGV)
         if ($line =~ /($contents_start)(.*?)($contents_end)/is)
         {
             my $oldcontent = $2;
-            my $newcontent = `$script_dir/html-toc $file`;
+            open(my $toc_pipe, '-|', "$script_dir/html-toc", $file)
+              or die "Can't run html-toc: $!";
+            my $newcontent = do { local $/; <$toc_pipe> };
+            close($toc_pipe) or die(
+              $! ? "Error closing pipe: $!"
+              : "html-toc failed for $file (exit status: $?)"
+              );
             if ($newcontent eq "\n")
             {
                 $newcontent = "";
@@ -156,9 +162,9 @@ FILELOOP: for my $file (@ARGV)
             #   "perl -pi.bak -e '\$/ = \"\\n\\n\"; s/($contents_start_quoted)(.*?)($contents_end_quoted)/\$1$newcontent_quoted\$3/s'"
             # but that doesn't work:  the shell says "word too long".
             rename($file, "$file.bak") or die "Can't make backup of $file";
-            open(OLDFILE, "$file.bak")
+            open(OLDFILE, '<', "$file.bak")
               or die "Can't read backup I just made: $file.bak";
-            open(FILE, ">$file")
+            open(FILE, '>', $file)
               or die "Can't write $file; old version in $file.bak";
             while (defined($line = <OLDFILE>))
             {

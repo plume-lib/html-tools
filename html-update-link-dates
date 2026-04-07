@@ -181,7 +181,7 @@ sub file_size ( $ )
     # 5 to the third most significant digit (since we truncate to two
     # significant digits).
     my $to_add = "5" . ("0" x (length($size) - 3));
-    $trunc_size = sprintf("%f", ($size + $to_add) / $divisor);
+    my $trunc_size = sprintf("%f", ($size + $to_add) / $divisor);
     if ($trunc_size =~ m/^([0-9][0-9])([0-9]*)(\.[0-9]*)?$/)
     {
         $trunc_size = $1 . "0" x length($2);
