@@ -45,4 +45,4 @@ def replace_line(match: re.Match[str]) -> str:
 with Path(htmlfile).open() as htmlfile_handle:
     for line in htmlfile_handle:
         line = lineref_re.sub(replace_line, line)
-        print(line)
+        print(line, end="")
