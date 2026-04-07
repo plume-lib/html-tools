@@ -134,7 +134,10 @@ FILELOOP: for my $file (@ARGV)
             open(my $toc_pipe, '-|', "$script_dir/html-toc", $file)
               or die "Can't run html-toc: $!";
             my $newcontent = do { local $/; <$toc_pipe> };
-            close($toc_pipe);
+            close($toc_pipe) or die(
+              $! ? "Error closing pipe: $!"
+              : "html-toc failed for $file (exit status: $?)"
+              );
             if ($newcontent eq "\n")
             {
                 $newcontent = "";
