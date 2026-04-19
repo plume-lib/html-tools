@@ -17,6 +17,6 @@ jobs:
       - name: Install markdownlint
         run: npm install markdownlint-cli2 --global
       - name: Install uv
-        uses: astral-sh/setup-uv@v7
+        uses: astral-sh/setup-uv@v8.1.0
       - name: Check style
         run: make style-check
