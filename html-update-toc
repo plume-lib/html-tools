@@ -113,9 +113,7 @@ FILELOOP: for my $file (@ARGV)
         my $line = <FILE>;
         if (!defined($line))
         {
-
-            # past end of file
-            next;
+            last;    # past end of file
         }
         if ($debug) { print STDERR "line: $line"; }
 

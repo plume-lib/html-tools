@@ -202,13 +202,7 @@ sub simplify_path_name ( $ )
 {
     my ($path) = check_args(1, @_);
     my $result = $path;
-    while (($result =~ s%/[^/\n]*/\.\./%/%) && $result ne $path)
-    {
-        $path = $result;
-    }
-    while (($result =~ s%//%/%g) && $result ne $path)
-    {
-        $path = $result;
-    }
+    1 while $result =~ s%/[^/\n]*/\.\./%/%;
+    1 while $result =~ s%//%/%g;
     return $result;
 }

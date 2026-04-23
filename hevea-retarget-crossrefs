@@ -40,23 +40,19 @@
 
 # This script does not work with in-place editing (perl's -i argument).
 
-# use strict;
-# use English;
-# $WARNING = 1;
+use strict;
+use warnings;
 
-$debug = 0;
+our $debug = 0;
+our @lines;
 
 # $debug = 1;
-
-# if (scalar(@ARGV) != 1) {
-#   die "Expected exactly 1 argument, got " . scalar(@ARGV);
-# }
-# my $filename = $ARGV[0];
 
 push @lines, $_;
 
 END
 {
+    my %mapping;
 
     for (my $i = 0 ; $i < scalar(@lines) ; $i++)
     {

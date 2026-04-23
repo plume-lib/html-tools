@@ -28,12 +28,15 @@ fi
 patchIt() {
   for f in "$1"/*.html; do
     if [ -f "$f" ]; then # if no .html files exist, f is literal "*.html"
-      tmpfile=$(mktemp patch_favicon_XXXXX)
-      # This creates tmpfile, with the same permissions as $f.
-      # The next command will overwrite it but preserve the permissions.
+      tmpfile=$(mktemp "${TMPDIR:-/tmp}/patch_favicon_XXXXXXXXXX")
+      # Copy permissions from $f to tmpfile before sed overwrites it.
       # Hat tip to http://superuser.com/questions/170226/standard-way-to-duplicate-a-files-permissions for this trick.
       \cp -p "$f" "$tmpfile"
-      sed -e " s%<head>\$%<head><link rel=\"icon\" href=\"$2\" type=\"image/png\"/>%" "$f" > "$tmpfile"
+      if ! sed -e " s%<head>\$%<head><link rel=\"icon\" href=\"$2\" type=\"image/png\"/>%" "$f" > "$tmpfile"; then
+        rm -f "$tmpfile"
+        echo "Error: sed failed on $f" >&2
+        continue
+      fi
       if ! cmp "$f" "$tmpfile" > /dev/null 2>&1; then
         mv -f "$tmpfile" "$f"
       else
