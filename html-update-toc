@@ -4,7 +4,7 @@
 # Michael Ernst <mernst@cs.washington.edu>
 # Time-stamp: <2020-12-24 11:03:07 mernst>
 
-# This script edits a HTML file in place to modify an existing table of
+# This script edits an HTML file in place to modify an existing table of
 # contents.  The contents start with
 #   <!-- start toc -->
 # and end with

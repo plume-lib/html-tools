@@ -56,7 +56,7 @@ These files are used by the
 program.
 
 * [`html-canonical-urls`](https://raw.githubusercontent.com/plume-lib/html-tools/master/html-canonical-urls)
-  maps a textual string (such as the name of a person, institution, er
+  maps a textual string (such as the name of a person, institution, or
   event) to the canonical URL for that string, such as the person's
   homepage.
 

@@ -114,7 +114,7 @@ sub file_date_replacement ( $$$$$ )
 
     # If this script changed the HTML file, then don't reset its write date.
     # This means that browsers which check the modification time before
-    # downloading a new version will get the lastest version.  And indeed the
+    # downloading a new version will get the latest version.  And indeed the
     # text has changed, though not substantially...
     if (($date ne $old_date) || (defined($old_size) && ($size ne $old_size)))
     {
