@@ -121,7 +121,7 @@ while (<>)
     elsif (/<!-- omit from toc -->|<omit from toc>/)
     {
 
-        # Check <omit from toc> because sometimes, a HTML comment is not appropriate.
+        # Check <omit from toc> because sometimes, an HTML comment is not appropriate.
         next;
     }
     elsif (
@@ -200,7 +200,7 @@ if ($num_named_1 + $num_unnamed_1 < 2)
 {
 
     # There is only one top-level (<h1>) item.
-    # Assume <h1> is the page title, and the h2, h3, h4 etc are the ones
+    # Assume <h1> is the page title, and the h2, h3, h4, etc., are the ones
     # we should be making a toc for.
     $output =~ s/^<ul>${eol}//;
     $output =~ s/<\/ul>${eol}$//;

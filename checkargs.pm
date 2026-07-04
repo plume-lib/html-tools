@@ -189,7 +189,7 @@ sub error_loc ( )
     }
     else
     {    # One of the checkargs routines was called at top level.  That's not
-         # its intended us, but make it give a good error message nonetheless.
+         # its intended use, but make it give a good error message nonetheless.
         ($pack, $file_arg, $line_arg, $subname, $hasargs, $wantarr) = caller(1);
         return "$file_arg:$line_arg:";
     }

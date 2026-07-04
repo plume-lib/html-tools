@@ -2,7 +2,7 @@
 # (because it contains non-UTF-8 characters used by bibtex2web).
 #
 # This file maps a textual string (such as the name of a person,
-# institution, or event) to the a canonical URL for that string.
+# institution, or event) to the canonical URL for that string.
 # It is used by the bibtex2web program
 # (https://homes.cs.washington.edu/~mernst/software/bibtex2web.html).
 # The textual string contains bibtex2web markup, not HTML markup,
