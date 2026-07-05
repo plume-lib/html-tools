@@ -35,7 +35,7 @@ BEGIN
 {
     for my $file (@ARGV)
     {
-        $file =~ s/\/$/index.html/;
+        $file =~ s/\/$/\/index.html/;
         if (!(-f $file && -r $file))
         {
             die "$file isn't a readable normal file";

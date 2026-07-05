@@ -172,7 +172,7 @@ while (<>)
         my $secname2   = "";
         found_header($thishlevel, $anchorname, $secname1, $secname2);
     }
-    elsif (/<h([1-9])>(.*)<\/h([1-9])>/)
+    elsif (/<h([1-9])(?: [^>]*)?>(.*)<\/h([1-9])>/)
     {
         if ($1 == 1)
         {
@@ -180,7 +180,7 @@ while (<>)
         }
         $errors .= "$ARGV:$.: No <a name=...> tag: $_";
     }
-    elsif (/<h([1-9])>/)
+    elsif (/<h([1-9])(?: [^>]*)?>/)
     {
         $errors .= "$ARGV:$.: No </h$1> tag: $_";
     }
@@ -212,7 +212,7 @@ if ($num_named_1 + $num_unnamed_1 < 2)
     {
 
         # Remove error from output
-        $errors =~ s/^.*: No <a name=\.\.\.> tag: <h1>[^${eol}]*${eol}//;
+        $errors =~ s/^.*: No <a name=\.\.\.> tag: <h1(?: [^>]*)?>[^${eol}]*${eol}//;
     }
 }
 print STDERR $errors;
