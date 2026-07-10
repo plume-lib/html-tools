@@ -28,8 +28,8 @@ Alessandro Orso https://faculty.cc.gatech.edu/~orso/
 Alex Groce https://www-2.cs.cmu.edu/~agroce/
 Alex Potanin https://potanin.github.io/
 # ALICE03 https://archive.siam.org/meetings/alice03/index.htm
-Amit Paradkar https://researcher.watson.ibm.com/researcher/view.php?person=us-paradkar
-Amy Williams https://hapi-dna.org/williamslab/
+Amit Paradkar https://research.ibm.com/people/amit-paradkar
+Amy Williams https://hapi-dna.org/lab/
 Ana Milanova https://www.cs.rpi.edu/~milanova/
 Andreas Zeller https://andreas-zeller.info/
 Andrew J. Ko https://faculty.washington.edu/ajko/
@@ -57,7 +57,7 @@ Charles Sutton https://homepages.inf.ed.ac.uk/csutton/
 Chenglong Wang https://chenglongwang.org/
 Chris Parnin https://chrisparnin.me/
 Christoph Csallner https://ranger.uta.edu/~csallner/
-Colin S. Gordon https://www.cs.drexel.edu/~csgordon/
+Colin S. Gordon https://www.cs.drexel.edu/~csg63/
 Craig Chambers https://homes.cs.washington.edu/~chambers/
 Craig Kaplan https://cs.uwaterloo.ca/~csk/
 Craig S. Kaplan https://cs.uwaterloo.ca/~csk/
@@ -84,8 +84,8 @@ Doug Woos https://www.dougwoos.com/
 E. James Whitehead, Jr. https://users.soe.ucsc.edu/~ejw/
 E. James Whitehead,Â Jr. https://users.soe.ucsc.edu/~ejw/
 Earl T. Barr https://earlbarr.com/
-ECOOP '98 https://ecoop98.vub.ac.be/
-ECOOP 2004 https://www.ifi.uio.no/ecoop2004/
+# ECOOP '98 https://ecoop98.vub.ac.be/
+# ECOOP 2004 https://www.ifi.uio.no/ecoop2004/
 ECOOP 2008 https://ecoop08.cs.ucy.ac.cy/
 # Webpage works, but link checker gives 500 error that I can't figure out how to resolve:
 # Edward X. Wu https://www.edwardxwu.com/
@@ -103,7 +103,7 @@ FMICS 03 https://fmics.inria.fr/workshop-8/
 Frank Tip https://www.franktip.org/
 Franziska Roesner https://www.franziroesner.com/
 # FSE 2002 https://www.cs.virginia.edu/FSE-10/
-FSE 2004 https://isr.uci.edu/FSE-12/
+# FSE 2004 https://isr.uci.edu/FSE-12/
 FTfJP'2005 https://www.cs.ru.nl/ftfjp/2005.html
 Gary T. Leavens https://www.eecs.ucf.edu/~leavens/homepage.html
 # Gideon Yuval https://research.microsoft.com/users/gideony/
@@ -114,7 +114,7 @@ Greg J. Badros https://www.badros.com/greg/
 Greg Morrisett https://www.eecs.harvard.edu/~greg/
 Hao Lü https://www.linkedin.com/in/hao-lu-86704177
 Ian Drosos https://www.iandrosos.me/
-ICALEPCS 2017 https://www.icalepcs2017.org/
+# ICALEPCS 2017 https://www.icalepcs2017.org/
 # ICSE '99 https://sunset.usc.edu/icse99/
 # ICSE 2000 https://www.ul.ie/~icse2000/
 ICSE 2000 https://web.archive.org/web/20160405001534/https://www3.ul.ie/~icse2000/
@@ -126,8 +126,8 @@ ICSE 2004 https://www.icse-conferences.org/2004/
 ICSE'04 https://www.icse-conferences.org/2004/
 ICSE 2005 https://www.icse-conferences.org/2005/Home/
 ICSE'05 https://www.icse-conferences.org/2005/Home/
-ICSE 2007 https://www.cs.ucl.ac.uk/icse07/
-ICSE'07 https://www.cs.ucl.ac.uk/icse07/
+ICSE 2007 https://www.icse-conferences.org/2007/
+ICSE'07 https://www.icse-conferences.org/2007/
 # ICSM 2011 URL went down in a computer crash in 10/2017, may be restored later.
 # ICSM 2001 https://www.dsi.unifi.it/icsm2001/
 ICSM 2004 https://www.cs.iit.edu/~icsm2004/
@@ -136,9 +136,9 @@ IJCAI-97 https://www.ijcai.org/past/ijcai-97/
 Irfan Ul Haq https://software.imdea.org/people/irfanul.haq/
 Isil Dillig https://www.cs.utexas.edu/~isil/
 ISSTA 2000 https://www.ics.uci.edu/~irus/issta/
-ISSTA 2002 https://labse.isti.cnr.it/ISSTA2002/
+# ISSTA 2002 https://labse.isti.cnr.it/ISSTA2002/
 # ISSTA 2004 https://cse.unl.edu/~grother/issta2004/ Gregg Rothermel deleted it.
-ISSTA 2006 https://cs.drew.edu/~emhill/ud/issta/
+# ISSTA 2006 https://cs.drew.edu/~emhill/ud/issta/
 ISSTA 2008 https://research.cs.vt.edu/issta08/
 ISSTA 2018 https://conf.researchr.org/home/issta-2018
 Ittai Balaban https://www.linkedin.com/in/ittaibalaban
@@ -149,7 +149,7 @@ James R. Wilcox https://jamesrwilcox.com/
 Jason Waataja https://www.facebook.com/jason.waataja
 # Jeff Mellen https://jeffm.mit.edu/
 # Redirects to empty page as of 2/6/2008 Jeremy W. Nimmer https://alum.mit.edu/www/jwnimmer/
-Joe Kiniry https://www.galois.com/team/joe-kiniry/
+Joe Kiniry https://www.galois.com/team/joe-kiniry
 Johan Östlund https://user.it.uu.se/~johos902/
 José Campos https://jose.github.io/
 Jonathan Bachrach https://people.csail.mit.edu/jrb/
@@ -223,7 +223,7 @@ Philip Koopman https://users.ece.cmu.edu/~koopman/
 # LinkedIn URLs aren't very canonical
 # Pieter Hooimeijer https://www.linkedin.com/pub/pieter-hooimeijer/29/323/a97
 PLAS 2007 https://www.cs.umd.edu/~mwh/PLAS07/
-PLDI 2008 https://pldi2008.cs.ucr.edu/
+# PLDI 2008 https://pldi2008.cs.ucr.edu/
 Rahul Gopinath https://rahul.gopinath.org/
 Rashmi Mudduluru https://sites.google.com/view/rashmi/home
 Ravi Bhoraskar https://ravi.bhoraskar.com/
@@ -260,7 +260,8 @@ Steve Anton https://www.linkedin.com/in/steve-anton-944aa36b
 Steven A. Wolfman https://www.cs.ubc.ca/~wolf/
 Steven P. Reiss https://cs.brown.edu/~spr/
 # Stuart Pernsteiner https://homes.cs.washington.edu/~spernste/
-Sunghun Kim https://cse.hkust.edu.hk/~hunkim/
+Sunghun Kim https://seng.hkust.edu.hk/about/people/faculty/sung-hun-kim
+# Sunghun Kim https://cse.hkust.edu.hk/~hunkim/
 Suzanne Millstein https://www.linkedin.com/in/suzanne-millstein-a3770956/
 Tao Xie https://taoxie.cs.illinois.edu/
 Thomas Ball https://www.microsoft.com/en-us/research/people/tball/
@@ -281,16 +282,16 @@ Vijay Ganesh https://ece.uwaterloo.ca/~vganesh/
 # Temporarily commented out to avoid breaking https://homes.cs.washington.edu/~mernst/pubs/haloop-vldb2012-abstract.html
 # VLDB 2010 https://vldb2010.org/
 # Broken as of 11/4/2006, 2/8/2008, 8/19/2008: VMCAI'03 https://www.cs.nyu.edu/vmcai03/
-VSTTE https://vstte.ethz.ch/
+VSTTE https://www.vstte.ethz.ch/
 Wei Huang https://huangw5.github.io/
 Weng-Fai Wong https://www.comp.nus.edu.sg/~wongwf/
 Werner Dietl https://ece.uwaterloo.ca/~wdietl/
 Werner M. Dietl https://ece.uwaterloo.ca/~wdietl/
-Will Scott https://wills.co.tt/#main
+Will Scott https://wills.co.tt/
 Willem Visser https://www.cs.sun.ac.za/~wvisser/
 William G. Griswold https://cseweb.ucsd.edu/~wgg/
 William Thies https://billthies.net
-Wing Lam https://cs.gmu.edu/~winglam/
+Wing Lam https://people.cs.gmu.edu/~winglam/
 # The shorter name substitutes within the longer ones, so omit one or the other.
 # WODA 2003 https://www.cs.nmsu.edu/~jcook/woda2003/
 Workshop on Dynamic Analysis (WODA 2003) https://www.cs.nmsu.edu/~jcook/woda2003/
