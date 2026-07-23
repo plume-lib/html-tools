@@ -1,4 +1,4 @@
-.PHONY: all
+.PHONY: all clean test
 
 all: style-fix style-check
 
