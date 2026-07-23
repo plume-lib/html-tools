@@ -1,3 +1,4 @@
+.PHONY: all clean test
 all: test
 
 test:
