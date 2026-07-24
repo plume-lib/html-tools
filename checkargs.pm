@@ -82,7 +82,7 @@ sub check_args ( $@ )
     {
         croak "check_args needs at least 1 arg, got ", scalar(@_), ": @_\n ";
     }
-    if ((!wantarray) && ($num_formals != 0))
+    if (defined(wantarray) && (!wantarray) && ($num_formals != 0))
     {
         croak "check_args called in scalar context";
     }
@@ -116,7 +116,7 @@ sub check_args_range ( $$@ )
         croak "check_args_range needs at least 2 args, got ", scalar(@_),
           ": @_";
     }
-    if ((!wantarray) && ($max_formals != 0) && ($min_formals != 0))
+    if (defined(wantarray) && (!wantarray) && ($max_formals != 0) && ($min_formals != 0))
     {
         croak "check_args_range called in scalar context";
     }
@@ -152,7 +152,7 @@ sub check_args_at_least ( $@ )
         croak "check_args_at_least needs at least 1 arg, got ", scalar(@_),
           ": @_";
     }
-    if ((!wantarray) && ($min_formals != 0))
+    if (defined(wantarray) && (!wantarray) && ($min_formals != 0))
     {
         croak "check_args_at_least called in scalar context";
     }
