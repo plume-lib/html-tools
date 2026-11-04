@@ -66,10 +66,12 @@ END
 {
     for my $file (keys %file_atime)
     {
-        utime($file_atime{$file}, $file_mtime{$file}, $file);
+        utime($file_atime{$file}, $file_mtime{$file}, $file)
+          or warn "html-update-link-dates: can't restore timestamps of $file: $!\n";
 
         # $< is the real userid for whoever is running this program.
-        chown($<, $file_gid{$file}, $file);
+        chown($<, $file_gid{$file}, $file)
+          or warn "html-update-link-dates: can't restore ownership of $file: $!\n";
     }
 
     # Ordinary, non-erroneous termination
@@ -102,8 +104,9 @@ sub file_date_replacement ( $$$$$ )
         my $date = "00 Mth 0000";
         if (defined($old_size)) { $date .= ", 00 Mbytes"; }
 
-        # Don't print warning if commented out.
-        if (($pre =~ /<!--/) && ($pre !~ /-->/))
+        # Warn about the missing file, unless the link is commented out.
+        # ($pre is only the "<a href=\"" prefix, so check the whole line $_.)
+        if ($_ !~ /<!--/)
         {
             print STDERR "html-update-link-dates: Didn't find $full_file\n";
         }
