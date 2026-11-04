@@ -34,7 +34,7 @@ If checkargs.pm appears in the same directory as its client, you can use:
 
 =head1 DESCRIPTION
 
-checkargs checks the number of arguments passed to a perl function at run
+checkargs checks the number of arguments passed to a Perl function at run
 time, catching some common errors that could otherwise go undetected until
 later in the program.
 
@@ -55,11 +55,11 @@ number are received, the program exits with an error message.
 Use of checkargs is not without cost:  profiling reveals that in one
 system, checkargs consumes 35% of all time.  To create a faster version of
 your program after you have thoroughly tested it, name the following script
-remove_check_args and run remove_check_args on the perl source to create a
+remove_check_args and run remove_check_args on the Perl source to create a
 faster version.  (You should probably keep around the original version,
 containing the checkargs calls, for future debugging.)
 
-  #!/uns/bin/perl -wp
+  #!/usr/bin/perl -wp
   # remove_check_args -- replace check_args_.* function calls by "@_"
   # (check_args may consume 35% or more of a program's running time)
   s/^(\s*{)?\s*\bcheck_args(|_at_least|_range)\s*\(.*;/$1||""/e;
