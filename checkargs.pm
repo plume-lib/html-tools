@@ -59,7 +59,7 @@ remove_check_args and run remove_check_args on the Perl source to create a
 faster version.  (You should probably keep around the original version,
 containing the checkargs calls, for future debugging.)
 
-  #!/uns/bin/perl -wp
+  #!/usr/bin/perl -wp
   # remove_check_args -- replace check_args_.* function calls by "@_"
   # (check_args may consume 35% or more of a program's running time)
   s/^(\s*{)?\s*\bcheck_args(|_at_least|_range)\s*\(.*;/$1||""/e;
